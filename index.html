@@ -2,7 +2,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="src/style.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <link rel="stylesheet" href="src/css/id.css">
   <script type="module" src="src/main.ts"></script>
 </head>
 
@@ -29,7 +30,11 @@
   </div>
 
 
-  <p id="repo">current repositories:</p> <p class="inline" id="repoCount">?</p>
+  <p id="repo">current repositories:</p> <p id="repoCount">?</p>
+  <p class="inline" id="promptAfterFetch">$</p>
+  <p class="inline" id="cursorAfterFetch">_</p>
+
+    <div id="rightPane"></div>
 
   <button id="musicButton">[paused]</button>
   <audio id="music" loop></audio> <!-- TODO: find some music and add as src, so the button serves an actual purpose  -->
