@@ -1,0 +1,27 @@
+body {
+  background-color: black;
+  user-select: none;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./assets/fonts/JetBrainsMono-Regular.woff2') format('woff2');
+}
+
+p {
+  font-family: 'JetBrains Mono', monospace;
+  color: white;
+  margin: 0;
+}
+
+pre {
+  font-family: 'JetBrains Mono';
+  color: white;
+  margin: 0;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: top;
+}
+

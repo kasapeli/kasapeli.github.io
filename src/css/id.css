@@ -1,0 +1,119 @@
+#cursor {
+  animation: blinkTemp 1.5s step-end forwards;
+}
+
+#cursorAfterFetch {
+  color: black;
+  animation:
+    post 2.5s step-end forwards,
+    blink 0.7s steps(1, start) infinite;
+}
+
+#promptAfterFetch {
+  color: black;
+  animation: post 2.5s step-end forwards;  
+}
+
+#fetchText {
+  width: 0;
+  overflow: hidden;
+  animation: typing 1s steps(5) forwards;
+}
+
+#fetchInfo {
+  color: black;
+  animation: fetch 1.6s step-end forwards;
+}
+
+#ghost {
+  color: black;
+  animation: fetch 2s step-end forwards;
+}
+
+#repo {
+  color: black;
+  animation: fetch 2.2s step-end forwards;
+}
+
+#repoCount {
+  color: black;
+  animation: fetch 2.4s step-end forwards;
+}
+
+#musicButton {
+  color: black;
+  background-color: black;
+  font-family: monospace;
+  border: none;
+  font-size: 30px;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  animation: post 2.9s step-end forwards;
+}
+
+#rightPane {
+  border-left: 1px solid black;
+  height: 100%;
+  width: 140vh;
+  position: absolute;
+  top: 0%;
+  left: 15%;
+  animation: rightPane 2.9s step-end forwards;
+}
+
+@keyframes blinkTemp {
+  0%, 40%, 100% {
+    color: black;
+  }
+  20%, 80% {
+    color: white;
+  }
+}
+
+@keyframes blink {
+  50% {
+    color: black;
+  }
+}
+
+@keyframes post {
+  100% {
+    color: white;
+  }
+}
+
+@keyframes rightPane {
+  100% {
+    border-left: 1px solid white;
+  }
+}
+
+@keyframes typing {
+  0% {
+    color: red;
+  }
+  95% {
+    color: red;
+  }
+  96% {
+    color: lime;
+  }
+  100% {
+    color: white;
+  }
+
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 5ch;
+  }
+}
+
+@keyframes fetch {
+  100% {
+    color: white;
+  }
+}
